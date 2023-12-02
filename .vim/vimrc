@@ -1,0 +1,23 @@
+set nocompatible
+filetype plugin indent on
+syntax on
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set ignorecase
+set smartcase
+nnoremap * /\<<C-R>=expand('<cword>')<CR>\><CR>
+nnoremap # ?\<<C-R>=expand('<cword>')<CR>\><CR>
+set incsearch
+set hlsearch
+set number
+set ruler
+set laststatus=2
+set wildmenu
+set showcmd
+set lazyredraw
+set backspace=indent,eol,start
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
