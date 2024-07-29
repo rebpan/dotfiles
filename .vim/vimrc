@@ -1,6 +1,8 @@
 set nocompatible
+let mapleader = ","
 filetype plugin indent on
 syntax on
+set expandtab
 set shiftwidth=4
 set softtabstop=4
 set autoindent
@@ -21,3 +23,12 @@ nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
+let g:camelcasemotion_key = '<leader>'
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+let Tlist_Exit_OnlyWindow = 1
+nnoremap <silent> <F8> :TlistToggle<CR>

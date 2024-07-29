@@ -1,0 +1,18 @@
+colorscheme morning
+highlight Terminal guifg=lightgrey guibg=grey20
+if has('win32')
+    if &guifont == ''
+        set guifont=DejaVu_Sans_Mono:h11:cANSI
+    endif
+    set linespace=1
+endif
+set columns=80
+set lines=25
+set cmdheight=2
+if has('multi_byte_ime')
+    highlight Cursor guibg=Green guifg=NONE
+    highlight CursorIM guibg=Purple guifg=NONE
+endif
+set mouse=a
+set nomousefocus
+set mousehide
